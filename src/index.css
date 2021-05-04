@@ -1,8 +1,32 @@
+@font-face {
+  font-family: "SBHeader";
+  src: local("SBHeader"),
+    url("./fonts/GT-America-Compressed-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SBHighlight";
+  src: local("SBHighlight"),
+    url("./fonts/GT-America-Standard-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SBBody";
+  src: local("SBBody"),
+    url("./fonts/GT-America-Standard-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SBButton";
+  src: local("SBButton"),
+    url("./fonts/GT-America-Extended-Bold.otf") format("opentype");
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif, 'SBHeader', 'SBHighlight', 'SBBody', 'SBButton';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

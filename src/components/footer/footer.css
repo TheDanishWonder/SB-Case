@@ -1,0 +1,10 @@
+/* className Styling */
+.FooterContainer {
+  position: absolute;
+  left: 0;
+
+  right: 0;
+  height: 100px;
+  padding: 0px 16px 0px 16px;
+  background-color: rgb(33, 34, 34);
+}

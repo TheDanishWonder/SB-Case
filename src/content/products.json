@@ -1,0 +1,63 @@
+ [
+        {
+            "title": "Soundboks",
+            "product": "The New SOUNDBOKS",
+            "price": "6,699 kr.",
+            "info": "Starting at $93/mo with affirm",
+            "policy": "30 Days Free Returns",
+            "offer": "50% Off 2nd Battery",
+            "reducedPrice": "",
+            "icon": "",
+            "image": "TheNewSOUNDBOKS",
+            "link": "https://www.soundboks.com/dk/products/soundboks-gen-3/"
+          },
+          {
+            "title": "Soundboks",
+            "product": "SOUNDBOKS 2",
+            "price": "6,299 kr.",
+            "info": "Starting at $93/mo with affirm",
+            "policy": "30 Days Free Returns",
+            "offer": "",
+            "reducedPrice": "5,199 kr.",
+            "icon": "",
+            "image": "SOUNDBOKS2",
+            "link": "https://www.soundboks.com/dk/products/soundboks-gen-2/"
+          },
+          
+          {
+            "title": "Explore Package",
+            "product": "Explore Pack",
+            "price": "7,099 kr.",
+            "info": "Starting at $93/mo with affirm",
+            "policy": "30 Days Free Returns",
+            "offer": "",
+            "reducedPrice": "5,999 kr.",
+            "icon": "",
+            "image": "ExplorePack",
+            "link": "https://www.soundboks.com/dk/products/explorer-pack/"
+          },
+          {
+            "title": "RF50",
+            "product": "SOUNDBOKS x RF50",
+            "price": "6,999 kr.",
+            "info": "Starting at $93/mo with affirm",
+            "policy": "30 Days Free Returns",
+            "offer": "600kr. Donation pr. Speaker Sold",
+            "reducedPrice": "",
+            "icon": "fast",
+            "image": "SOUNDBOKSXRF50",
+            "link": "https://www.soundboks.com/dk/products/roskilde-festival-edition/"
+          },
+          {
+            "title": "Mikkeller",
+            "product": "SOUNDBOKS x Mikkeller",
+            "price": "7,199 kr.",
+            "info": "Starting at $93/mo with affirm",
+            "policy": "Out of Stock",
+            "offer": "",
+            "reducedPrice": "",
+            "icon": "sadFace",
+            "image": "SOUNDBOKSXMIKKELLER",
+            "link": "https://www.soundboks.com/dk/products/soundboks-mikkeller-edition-dk/"
+          }
+    ]

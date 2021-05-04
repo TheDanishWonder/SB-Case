@@ -1,0 +1,54 @@
+.MenuContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  padding-top: 100px;
+  margin-top: 40px;
+  z-index: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 900px ) {
+  .MenuContainer {
+    padding-top: 50px;
+  }
+  
+}
+.MenuBox {
+  padding: 10px 10px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.MenuItem {
+  display: inline-block;
+  padding: 5px 10px 5px 10px;
+  border: 2px solid black;
+  margin: 7px 7px 7px 7px;
+  text-decoration: none;
+  font-family: "SBButton";
+  font-size: 0.89rem;
+  text-transform: capitalize;
+  color: #000;
+  letter-spacing: 0.4px;
+}
+
+.FilterLogo {
+    padding: 0px 10px 0px 10px;
+    margin-top: 6px;
+}
+/* JS component styling */
+
+ul {
+  list-style: none;
+}
+
+.MenuItem:hover {
+  background-color: black;
+  color: white;
+}

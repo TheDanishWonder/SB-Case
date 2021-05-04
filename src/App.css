@@ -1,5 +1,9 @@
+
+
+
 .App {
   text-align: center;
+  margin: 0px 24px 0px 24px;
 }
 
 .App-logo {
@@ -13,19 +17,65 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Container {
+  padding-top: 180px;
+  padding-bottom: 32px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px ) {
+  .Container {
+    padding-top: 220px;
+  }
+  
 }
 
 .App-link {
   color: #61dafb;
+}
+
+@media only screen and (max-width: 400px ) {
+  .GridWrapper {
+    grid-template-columns: minmax(250px, 350px) ;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media only screen and (max-width: 740px ) {
+  .GridWrapper {
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+@media only screen and (min-width: 740px ) {
+  .GridWrapper {
+    grid-template-columns: minmax(250px, 350px) minmax(250px, 350px) ;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+@media only screen and (min-width: 1085px) {
+  .GridWrapper {
+    grid-template-columns: minmax(250px, 350px) minmax(250px, 350px) minmax(250px, 350px);
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+}
+.GridWrapper {
+  height: 100%;
+  width: 100%;
+  display: grid;
+    gap: 24px 16px;
+    max-width: 1278px; /* max-width of the layout */
+    margin: 0 auto;
+  margin-top: 60px;
 }
 
 @keyframes App-logo-spin {

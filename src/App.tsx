@@ -14,6 +14,14 @@ import SB2 from "./components/assests/images/SOUNDBOKS2.png";
 import RF50 from "./components/assests/images/SOUNDBOKSXRF50.png";
 import SBMK from "./components/assests/images/SOUNDBOKSXMIKKELLER.png";
 import EP from "./components/assests/images/ExplorePack.png";
+import BP from "./components/assests/images/Backpack.png";
+import OG from "./components/assests/images/OrangeGrill.png";
+import WG from "./components/assests/images/WhiteGrill.png";
+import BG from "./components/assests/images/BlackGrill.png";
+import Charger from "./components/assests/images/CHARGER.png";
+import GiftCard from "./components/assests/images/GiftCard.png";
+import BB from "./components/assests/images/BATTERYBOKS.png";
+import JBG from "./components/assests/images/SOUNDBOKSXJBG.png";
 
 function App() {
   // convert JSON Array to string
@@ -32,6 +40,9 @@ function App() {
       icon: string;
       image: string;
       link: string;
+      stock: string;
+      limited: boolean;
+      type: string;
     }) => {
       return (
         <Card
@@ -53,6 +64,22 @@ function App() {
               ? SBMK
               : "" || product.image === "SOUNDBOKSXRF50"
               ? RF50
+              : "" || product.image === "SOUNDBOKSXJBG"
+              ? JBG
+              : "" || product.image === "OrangeGrill"
+              ? OG
+              : "" || product.image === "WhiteGrill"
+              ? WG
+              : "" || product.image === "BlackGrill"
+              ? BG
+              : "" || product.image === "CHARGER"
+              ? Charger
+              : "" || product.image === "BATTERYBOKS"
+              ? BB
+              : "" || product.image === "GiftCard"
+              ? GiftCard
+              : "" || product.image === "Backpack"
+              ? BP
               : ""
           }
           icon={
@@ -63,6 +90,9 @@ function App() {
               : ""
           }
           link={product.link}
+          stock={product.stock}
+          limited={product.limited}
+          type={product.type}
         />
       );
     }
@@ -71,13 +101,13 @@ function App() {
     <div className="App">
       <div className="AppContainer">
         <Header />
-        <FilterMenu
-          menuItem1={FilterMenuContent.menuItem1}
-          menuItem2={FilterMenuContent.menuItem2}
-          menuItem3={FilterMenuContent.menuItem3}
-          menuItem4={FilterMenuContent.menuItem4}
-          menuItem5={FilterMenuContent.menuItem5}
-        />
+                <FilterMenu
+        menuItem1={FilterMenuContent.menuItem1}
+        menuItem2={FilterMenuContent.menuItem2}
+        menuItem3={FilterMenuContent.menuItem3}
+        menuItem4={FilterMenuContent.menuItem4}
+        menuItem5={FilterMenuContent.menuItem5}
+      />
         <div className="Container">
           <div className="GridWrapper">{productCards}</div>
         </div>

@@ -72,7 +72,7 @@
   height: 100%;
   width: 100%;
   display: grid;
-    gap: 24px 16px;
+    gap: 80px 79.5px;
     max-width: 1278px; /* max-width of the layout */
     margin: 0 auto;
   margin-top: 60px;
@@ -86,3 +86,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+/* DOESNT WORK AS INTENDED*/
+
+  [id="tag:Speaker"]:target ~ :not([data-tag~="Speaker"]),
+  [id="tag:Accessories"]:target ~ :not([data-tag~="Accessories"]),
+  [id="tag:Grills"]:target ~ :not([data-tag~="Grills"]),
+  [id="tag:Bundle"]:target ~ :not([data-tag~="Bundle"]),
+  [id="tag:Special Editions"]:target ~ :not([data-tag~="Special Editions"]) {
+    display: none;
+  }
+

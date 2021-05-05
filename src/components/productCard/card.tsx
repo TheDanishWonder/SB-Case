@@ -10,6 +10,9 @@ interface Card {
   image: string;
   icon: string;
   link: string;
+  stock: string;
+  limited: boolean;
+  type: string;
 }
 
 const ProductCard = ({
@@ -23,20 +26,37 @@ const ProductCard = ({
   image,
   icon,
   link,
+  stock,
+  limited,
+  type,
 }: Card) => {
   return (
-    <a href={link} target="_blank" rel="noreferrer">
-      <div className={policy === "Out of Stock" ? "CardBox2" : "CardBox"}>
+    <a href={link} target="_blank" rel="noreferrer" className="product" id={`tag:${type}`} data-tag={type}>
+      <div className={policy === "Out of stock" ? `CardBox2` : `CardBox`}>
         <div className="CardHeader">
-          <div className={icon !== "" ? "CardTitleColumn" : "CardTitleRow"}>
+          <div
+            className={
+              icon !== "" && offer !== "left in stock"
+                ? "CardTitleColumn"
+                : "CardTitleRow"
+            }
+          >
             <p
               className={
-                policy !== "Out of Stock" ? "CardText" : "OutOfStockText"
+                policy === ""
+                  ? "NoOffer"
+                  : policy === "Out of stock" || policy === "Artist Editions"
+                  ? "OrangeText"
+                  : policy === "Compatible with all SOUNDBOKS versions"
+                  ? "BlackText"
+                  : "CardText"
               }
             >
               {policy}
             </p>
-            <p className={offer !== "" ? "CardText1" : "NoOffer"}>{offer}</p>
+            <p className={offer !== "" ? "CardText1" : "NoOffer"}>
+              {stock} {offer}
+            </p>
           </div>
           <div className="IconBox">
             <img
@@ -51,7 +71,9 @@ const ProductCard = ({
             policy === "Out of Stock" ? "BuyButtonBox2" : "BuyButtonBox"
           }
         >
-          <p className="BuyText">Køb</p>
+          <p className={policy === "Out of Stock" ? "BuyText2" : "BuyText"}>
+            Køb
+          </p>
         </div>
         <div className="CardImageBox">
           <img src={image} className="Image" alt="product" />
@@ -59,14 +81,14 @@ const ProductCard = ({
         {reducedPrice === "" ? (
           <div className="CardTitle2">
             <p className="CardText2">{product}</p>
-            <p className="CardText2">{price}</p>
+            <p className="CardText2">{price} kr.</p>
           </div>
         ) : (
           <div className="CardTitle2">
             <p className="CardText2">{product}</p>
             <div className="ReducedPrice">
-              <p className="CardText22">{price}</p>{" "}
-              <p className="CardText23">{reducedPrice}</p>
+              <p className="CardText22">{price} kr.</p>{" "}
+              <p className="CardText23">{reducedPrice} kr.</p>
             </div>
           </div>
         )}

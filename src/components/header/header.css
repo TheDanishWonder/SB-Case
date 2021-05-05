@@ -54,7 +54,8 @@
 }
 .NavItem {
     padding: 0px 16px 0px 16px;
-
+    display: inline-block;
+    padding: 20px 0 20px;
 }
 
 /* JS component styling */
@@ -62,13 +63,9 @@
 ul {
     list-style: none;
   }
+
   
-  li {
-    display: inline-block;
-    padding: 20px 0 20px;
-  }
-  
- li a {
+ .NavItemA {
     text-decoration: none;
     position: relative;
     display: block;
@@ -77,14 +74,14 @@ ul {
     text-transform: capitalize;
     color: #000;
   }
- li a:hover {
+ .NavItemA:hover {
     color: black;
   }
- li a:focus, a:active {
+ .NavItemA:focus, a:active {
     color: black;
   }
   
- li a::before {
+ .NavItemA::before {
     content: '';
     display: block;
     position: absolute;
@@ -101,12 +98,12 @@ ul {
     transition: color 0.1s, transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
   }
   
- li a:active::before {
+ .NavItemA:active::before {
     background-color: black;
   }
   
- li a:hover::before,
- li a:focus::before {
+ .NavItemA:hover::before,
+ .NavItemA:focus::before {
     -webkit-transform-origin: center top;
             transform-origin: center top;
     -webkit-transform: scale(1, 1);

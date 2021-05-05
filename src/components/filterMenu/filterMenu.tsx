@@ -22,12 +22,12 @@ const FilterMenu = ({
         <div className="FilterLogo">
           <FilterLogo />
         </div>
-        <div className="Menu">
-          <div className="MenuItem">{menuItem1}</div>
-          <div className="MenuItem">{menuItem2}</div>
-          <div className="MenuItem">{menuItem3}</div>
-          <div className="MenuItem">{menuItem4}</div>
-          <div className="MenuItem">{menuItem5}</div>
+        <div className="Menu" >
+          <a  href="#tag:Speaker"><label className="MenuItem" htmlFor="Speaker">{menuItem1}</label></a>
+          <a  href="#tag:Grills"><label className="MenuItem" htmlFor="Grills">{menuItem2}</label></a>
+          <a  href="#tag:Accessories"><label className="MenuItem" htmlFor="Accessories">{menuItem3}</label></a>
+          <a  href="#tag:Bundle"><label className="MenuItem" htmlFor="Bundle">{menuItem4}</label></a>
+          <a  href="#tag:Special Editions"><label className="MenuItem" htmlFor="Speacial Editions">{menuItem5}</label></a>
         </div>
       </div>
     </div>
